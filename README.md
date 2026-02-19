@@ -1,6 +1,6 @@
 🧠 MRI Brain Tumor Image Generation using GANs
-<p align="center"> <img src="![main-qimg-3cd4287f29cd7fdc7f68ab223107bb64-pjlq](https://github.com/user-attachments/assets/02bfaac5-b61a-4f65-9702-b4f5072304e3)
-e"/> <img src="https://img.shields.io/badge/DeepLearning-GAN-red"/> <img src="https://img.shields.io/badge/Domain-Medical%20AI-green"/> </p>
+<p align="center"> <img src="
+"/> <img src="https://img.shields.io/badge/DeepLearning-GAN-red"/> <img src="https://img.shields.io/badge/Domain-Medical%20AI-green"/> </p>
 📌 Overview
 
 This project focuses on generating synthetic brain tumor MRI images using Generative Adversarial Networks (GANs).
