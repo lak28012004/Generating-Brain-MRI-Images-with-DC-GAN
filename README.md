@@ -11,7 +11,7 @@ To address this issue, this project uses GANs to generate realistic synthetic MR
 
 🖼️ Sample Results
 🧾 Original MRI Scan
-<div align="center"> <img src="images/original_mri.png" width="500"/> </div>
+<div align="center"> <img src="image-01-differentes-coupes-axiales.jpg" width="500"/> </div>
 🔥 Generated MRI Image (GAN Output)
 <div align="center"> <img src="images.jpg" width="500"/> </div>
 🏗️ How It Works
