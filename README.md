@@ -1,88 +1,107 @@
 🧠 MRI Brain Tumor Image Generation using GANs
-<p align="center"> <img src="
-"/> <img src="download.png"/> <img src="https://img.shields.io/badge/Domain-Medical%20AI-green"/> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Domain-Medical%20AI-green"/> <img src="https://img.shields.io/badge/Model-GAN-blue"/> <img src="https://img.shields.io/badge/Framework-PyTorch%20%7C%20TensorFlow-orange"/> <img src="https://img.shields.io/badge/Status-Research%20Project-success"/> </p>
 📌 Overview
 
-This project focuses on generating synthetic brain tumor MRI images using Generative Adversarial Networks (GANs).
+Brain tumor MRI datasets often suffer from class imbalance, where tumor-positive scans are significantly fewer than normal scans. This imbalance negatively impacts deep learning model performance.
 
-Brain tumor datasets often suffer from class imbalance, where tumor-positive MRI scans are very limited compared to normal scans. This can negatively affect machine learning model performance.
+This project leverages Generative Adversarial Networks (GANs) to generate realistic synthetic brain tumor MRI images for dataset augmentation and improved model robustness.
 
-To address this issue, this project uses GANs to generate realistic synthetic MRI tumor images for dataset augmentation.
+The system demonstrates the practical application of generative deep learning in healthcare AI.
 
 🖼️ Sample Results
 🧾 Original MRI Scan
-<div align="center"> <img src="image-01-differentes-coupes-axiales.jpg" width="500"/> </div>
-🔥 Generated MRI Image (GAN Output)
-<div align="center"> <img src="images.jpg" width="500"/> </div>
-🏗️ How It Works
+<div align="center"> <img src="image-01-differentes-coupes-axiales.jpg" width="450"/> </div>
+🔥 GAN Generated MRI Image
+<div align="center"> <img src="images.jpg" width="450"/> </div>
+🏗️ Methodology
 
-The system follows a simple adversarial training process:
+The model follows the adversarial training paradigm:
 
-Noise Vector (z)
-      ↓
+Random Noise (z)
+        ↓
 Generator Network
-      ↓
+        ↓
 Synthetic MRI Image
-      ↓
+        ↓
 Discriminator (Real vs Fake)
-      ↓
-Model Improvement (Adversarial Learning)
+        ↓
+Adversarial Optimization
+🔁 Training Strategy
+
+Generator learns to produce realistic tumor MRIs
+
+Discriminator learns to classify real vs fake images
+
+Both networks improve iteratively through adversarial loss
 
 🧠 Key Features
 
-GAN-based MRI image generation
+✔ GAN-based MRI tumor image synthesis
 
-Helps reduce dataset imbalance
+✔ Reduces dataset imbalance
 
-Improves training data diversity
+✔ Enhances training data diversity
 
-Modular and scalable training pipeline
+✔ Modular training pipeline
+
+✔ Scalable for other medical imaging domains
 
 🛠️ Tech Stack
 
-Python
+Programming: Python
 
-PyTorch / TensorFlow
+Deep Learning: PyTorch / TensorFlow
 
-NumPy
+Data Processing: NumPy, OpenCV
 
-OpenCV
+Visualization: Matplotlib
 
-Matplotlib
-
-⚡ Installation & Setup
-1️⃣ Clone the Repository
+⚙️ Installation & Setup
+1️⃣ Clone Repository
 git clone https://github.com/yourusername/mri-gan-generator.git
 cd mri-gan-generator
 2️⃣ Install Dependencies
 pip install -r requirements.txt
 3️⃣ Train the Model
 python train.py
-4️⃣ Generate Images
+4️⃣ Generate Synthetic MRI Images
 python generate.py
 
-Generated images will be saved in:
+Generated outputs will be stored in:
 
 outputs/
 📂 Project Structure
 MRI-GAN/
 │
-├── dataset/
-├── models/
-├── train.py
-├── generate.py
-├── outputs/
-└── README.md
-🎯 Objective
-
-The goal of this project is to:
+├── dataset/              # MRI dataset (training images)
+├── models/               # Generator & Discriminator architectures
+├── train.py              # Model training script
+├── generate.py           # Synthetic image generation script
+├── outputs/              # Generated MRI images
+├── requirements.txt      # Project dependencies
+└── README.md             # Project documentation
+🎯 Project Objectives
 
 Address class imbalance in medical datasets
 
-Improve AI model robustness
+Improve robustness of tumor detection models
 
-Demonstrate applied generative deep learning in healthcare
+Apply GANs in healthcare AI
+
+Demonstrate practical generative modeling skills
+
+📈 Future Enhancements
+
+Conditional GAN (cGAN) for tumor type control
+
+DCGAN / StyleGAN architecture experimentation
+
+Integration with tumor classification pipeline
+
+Quantitative evaluation (FID Score, SSIM, PSNR)
 
 📌 Conclusion
 
-This project showcases how Generative Adversarial Networks (GANs) can be used in medical imaging to generate realistic MRI tumor images and enhance dataset quality for better AI model performance.
+This project demonstrates how Generative Adversarial Networks (GANs) can enhance medical imaging datasets by generating realistic synthetic brain tumor MRIs.
+
+It highlights the practical potential of generative AI in healthcare, improving dataset quality and enabling more robust diagnostic AI systems.
